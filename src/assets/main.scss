@@ -1,0 +1,18 @@
+@import "variables";
+@import "helpers";
+@import "layout";
+@import "fonts";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	color: var(--black-color-2);
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+}

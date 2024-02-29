@@ -1,0 +1,44 @@
+.flex {
+  display: flex;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 425px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+
+@media (min-width: 1216px) {
+  .container {
+    max-width: 1152px;
+  }
+}

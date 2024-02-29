@@ -1,0 +1,45 @@
+$spacing:
+  "auto" auto,
+  "0" var(--grid-0),
+  "8" var(--grid-8),
+  "12" var(--grid-12),
+  "16" var(--grid-16),
+  "24" var(--grid-24),
+  "32" var(--grid-32),
+  "40" var(--grid-40);
+
+/* ================
+    * MARGINS *
+================== */
+
+@each $name, $num in $spacing {
+  .ma-#{$name} { margin: $num }
+  .mr-#{$name} { margin-right: $num }
+  .ml-#{$name} { margin-left: $num }
+  .mb-#{$name} { margin-bottom: $num }
+  .mt-#{$name} { margin-top: $num }
+}
+
+@media (max-width: 576px) {
+
+  @each $name, $num in $spacing {
+    .sm-ma-#{$name} { margin: $num }
+    .sm-mr-#{$name} { margin-right: $num }
+    .sm-ml-#{$name} { margin-left: $num }
+    .sm-mb-#{$name} { margin-bottom: $num }
+    .sm-mt-#{$name} { margin-top: $num }
+  }
+}
+
+
+/* ================
+    * PADDINGS *
+================== */
+
+@each $name, $num in $spacing {
+  .pa-#{$name} { padding: $num }
+  .pr-#{$name} { padding-right: $num }
+  .pl-#{$name} { padding-left: $num }
+  .pb-#{$name} { padding-bottom: $num }
+  .pt-#{$name} { padding-top: $num }
+}
